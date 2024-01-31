@@ -73,7 +73,6 @@ public class RemovingElements {
             int left = 0;
             int right = nums.length -1;
             int len = nums.length;
-
             while(left <= right){
                 if(nums[left] == val){
                     nums[left] = nums[right];
