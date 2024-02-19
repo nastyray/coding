@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import java.util.Arrays;
+import java.util.HashSet;
 
 /**
  * 希尔排序
@@ -7,6 +8,7 @@ import java.util.Arrays;
 public class Shell {
     public static void shellSort(int[] arr) {
         int n = arr.length;
+        HashSet<Object> objects = new HashSet<>();
         // 初始化间隔（gap）的值，它决定了每次迭代中子数组的大小
         // 从数组长度的一半开始作为初始间隔值，gap就是分割的子数组数量
         for (int gap = n / 2; gap > 0; gap /= 2) {
